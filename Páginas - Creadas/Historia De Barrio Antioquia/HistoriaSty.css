@@ -1,0 +1,133 @@
+/* Reset y base */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0a0a0a, #1f1f1f);
+    color: #eee;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #00c3ff;
+}
+
+a:hover {
+    color: #ff8a00;
+}
+
+/* Header */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 10, 10, 0.7)), url('header-image.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-style: italic;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    padding: 15px 10px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #222;
+    border-radius: 5px;
+}
+
+/* Sections */
+.intro, .content-section, .gallery {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+.intro:hover, .content-section:hover {
+    background-color: #222;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    color: #ccc;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 5px solid #00c3ff;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #ccc;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #666;
+}
