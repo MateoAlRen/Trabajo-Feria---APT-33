@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-main: "Edu SA Hand", cursive;
+    --text-header: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C0C0C0;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header___image{
+    width: 150px;
+}
+
+.logo-header__heading{
+    font-size: 50px;
+    padding-left: 30px;
+    font-family: var(--text-header);
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-header__link{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-family: var(--text-header);
+}
+
+.nav-header__link:hover{
+    background-color: #bc4749;
+    color: antiquewhite;
+}
+
+body{
+    background-color: #E5E4E2;
+}
+
+.article-heading{
+    text-align: center;
+    line-height: 80px;
+    font-size: 50px;
+    font-family: var(--text-main);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.article-section__card-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.card-container__card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card-container__card:hover{
+    border: 1px;
+    box-shadow: 0 0 5px #780000;
+}
+
+.card__image{
+    width: 300px;
+    height: 300px;
+}
+
+.card__button{
+    border: none;
+    height: 40px;
+    width: 166px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-family: var(--text-main);
+    font-weight: light;
+}
+
+.card__link{
+    text-decoration: none;
+    color: black;
+}
+
+.card__button:hover{
+    background-color: #bc4749;
+}
+
+.card__link:hover{
+    color: antiquewhite;
+}
+
+.footer-information{
+    background-color:#A9A9A9 ;
+    text-align: center;
+    line-height: 50px;
+    font-family: var(--text-header);
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        display: block;
+    }
+    .nav-header{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .nav-header__link{
+        align-self: flex-start;
+        width: 100%;
+        height: 100px;
+        border: 1px solid;
+    }
+    .article-section__card-container{
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+
+

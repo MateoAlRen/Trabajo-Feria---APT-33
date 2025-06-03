@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-main: "Edu SA Hand", cursive;
+    --text-header: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C0C0C0;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header___image{
+    width: 150px;
+}
+
+.logo-header__heading{
+    font-size: 50px;
+    padding-left: 30px;
+    font-family: var(--text-header)
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-header__link{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-family: var(--text-header)
+}
+
+.nav-header__link:hover{
+    background-color: #bc4749;
+    color: antiquewhite;
+}
+
+.article-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-product--height-cuero{
+    height:735px;
+}
+
+.article-product--height-chaquiras{
+    height: 735px;
+}
+
+.article-product--height-carriel{
+    height: 735px;
+}
+
+.article-product__price_and_tag{
+    padding-left: 90px;
+    font-family: var(--text-main);
+}
+
+.article-description{
+    padding-bottom: 20px;
+}
+
+.article-description__container{
+    text-align: justify;
+    font-size: 25px;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-family: var(--text-main);
+}
+
+.footer-information{
+    background-color:#A9A9A9 ;
+    text-align: center;
+    line-height: 50px;
+    font-family: var(--text-header)
+}
+
+@media screen and (max-width: 400px) {
+    header{
+        display: block;
+    }
+    .nav-header{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .nav-header__link{
+        align-self: flex-start;
+        width: 100%;
+        height: 100px;
+        border: 1px solid;
+    }
+    .article-product{
+        display: flex;
+        flex-flow: column;
+    }
+    .container__image{
+        width: 300px;
+    }
+    .article-product__price_and_tag{
+        align-self: flex-start;
+        padding-bottom: 20px;
+    }
+    .article-description__container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
